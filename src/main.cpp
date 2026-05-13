@@ -7,5 +7,5 @@ int main() {
   std::cerr << std::unitbuf;
 
   
-  std::cout<<"$";
+  std::cout<<"$ ";
 }
