@@ -22,7 +22,11 @@ int main() {
     else if(command.substr(0,5)=="type ")
     {
       std::string arg=command.substr(5);
-      if(arg=="echo " || arg=="exit " || arg=="type ") std::cout<<arg<<" is a shell builtin"<<std::endl;
+      if(arg=="echo " || arg=="exit " || arg=="type ")
+      {
+        std::cout<<arg<<" is a shell builtin"<<std::endl;
+        continue;
+      }
       std::string sys_path=std::getenv("PATH");
       std::stringstream ss(sys_path);
       std::string path;
