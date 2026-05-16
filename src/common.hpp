@@ -15,6 +15,7 @@ namespace mehsh::common
         "exit",
         "type",
         "pwd",
+        "cd"
     };
 
     static std::vector<std::string> paths;

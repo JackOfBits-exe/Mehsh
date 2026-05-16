@@ -9,6 +9,7 @@
 #include "exit.hpp"
 #include "type.hpp"
 #include "pwd.hpp"
+#include "cd.hpp"
 #include <cstdlib>
 
 namespace mehsh
@@ -19,6 +20,7 @@ namespace mehsh
         {"exit",&exit::execute},
         {"type",&type::execute},
         {"pwd",&pwd::execute},
+        {"cd",&cd::execute},
     };
 
     std::pair<std::string,std::string> extract_args(const std::string & command)
