@@ -8,7 +8,7 @@ namespace mehsh::pwd
 {
     int execute(const std::string& args)
     {
-        std::cout<<std::filesystem::current_path()<<std::endl;
+        std::cout<<std::filesystem::current_path().string()<<std::endl;
         return 0;
     }
 }
